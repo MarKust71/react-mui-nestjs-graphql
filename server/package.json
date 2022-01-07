@@ -10,7 +10,7 @@
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start:dev": "GOOGLE_APPLICATION_CREDENTIALS=/Users/marekkustosz/Repos/GitHub/MarKust71/shopping-list/.trash/shopping-list-9ed52-firebase-adminsdk-1c3wy-20dcc49e70.json nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
@@ -23,9 +23,13 @@
   "dependencies": {
     "@nestjs/common": "^8.0.0",
     "@nestjs/core": "^8.0.0",
+    "@nestjs/graphql": "^9.1.2",
     "@nestjs/platform-express": "^8.0.0",
+    "apollo-server-express": "^3.6.1",
+    "class-validator": "^0.13.2",
     "dotenv": "^10.0.0",
     "firebase-admin": "^10.0.1",
+    "graphql": "^15",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0"
